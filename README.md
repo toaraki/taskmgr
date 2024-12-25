@@ -92,4 +92,4 @@ sudo firewall-cmd --reload
 node server.js
 ```
 
-After booted application with no error . You can access this application "http://<server ip address>:8080/tasks"
+After booted application with no error . You can access this application "http://***server ip address***:8080/tasks"
