@@ -61,13 +61,26 @@ host    task_manager    task_user       127.0.0.1/32    md5
 
 ### 5. restart postgresql server
 
-```
+```bash
 sudo systemctl restart postgresql.service
 ```
 
 ### 6. Create database
 
+```bash
+sudo su - postgres -c psql -f ./pgsql/01_taskmgr_db_user.sql
+```
+
 ### 7. Run nodejs application
 
+```bash
+cd task-app
+./tool/setup.sh
+```
 
+### Allow to access 8080/tcp
 
+```bash
+sudo firewall-cmd --zone=FedoraServer --add-port=8080/tcp --permanent
+sudo firewall-cmd --reload
+```
