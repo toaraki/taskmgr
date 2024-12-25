@@ -13,7 +13,7 @@ Users can filter tasks by user ID to see only specific user tasks.
 This application demonstrates a basic 3-tier architecture, making it ideal for learning about application development and containerization.
 
 ### Archtecture that works on single VM .
-![Single Node Architecture](https://github.com/toaraki/taskmgr/blob/main/images/TaskManager-SingleMachineArch.png, "TaskManager-SingleMachineArch")
+![Single Node Architecture](images/TaskManager-SingleMachineArch.png, "TaskManager-SingleMachineArch")
 
 ## Prerequirements
 I tested this application on Fedora Server 41.
