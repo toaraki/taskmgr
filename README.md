@@ -78,9 +78,18 @@ cd task-app
 ./tool/setup.sh
 ```
 
-### Allow to access 8080/tcp
+### 8. Allow to access 8080/tcp
 
 ```bash
 sudo firewall-cmd --zone=FedoraServer --add-port=8080/tcp --permanent
 sudo firewall-cmd --reload
 ```
+
+### 9. Run application & access via web browser
+
+```bash
+# execute command on task-app directory
+node server.js
+```
+
+After booted application with no error . You can access this application "http://<server ip address>:8080/tasks"
